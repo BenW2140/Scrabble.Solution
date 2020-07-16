@@ -16,10 +16,18 @@ namespace Scrabble.Tests
     }
 
     [TestMethod]
-    public void AssignValues_AssignValues_Bool()
+    public void GetScore_CheckIfWord_Bool()
     {
       Score newWord = new Score();
       Assert.AreEqual(true, newWord.GetScore("word"));
+    }
+    
+    [TestMethod]
+    public void AssignValues_AssignValueToLetter_Dictionary()
+    {
+      Score newWord = new Score();
+      Dictionary<char, int> alphabet = new Dictionary<char, int> { {'A', 1}, {'E', 1}, {'I', 1}, {'O', 1}, {'U', 1}, {'L', 1}, {'N', 1}, {'R', 1}, {'S', 1}, {'T', 1}};
+      CollectionAssert.AreEqual(alphabet, newWord.AssignValues());
     }
   }
 }
