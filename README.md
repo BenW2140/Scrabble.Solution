@@ -26,17 +26,15 @@ Create an app that will take a word and return the Scrabble score for that word.
 
 | Behavior | Input | Output |  Completed(Y/N?)  |
 | -------- | ----- | ------ | -------- |
-| 1. Create an object that will associate letters with number values |  | A = 1 | N |
-| 2. Will determine how many letters are in a user input word | Java | 4 points | N |
-| 3. Will loop through every letter of word and add values to running total | Java | 14 points | N |
-| 4. Return Scrabble score for word to user | Java | Your word is worth 14 points in Scrabble! | N |
+| 1. Create an object that will associate letters with number values |  | A = 1 | Y |
+| 2. Will determine how many letters are in a user input word | Java | 4 points | Y |
+| 3. Will loop through every letter of word and add values to running total | Java | 14 points | Y |
+| 4. Return Scrabble score for word to user | Java | Your word is worth 14 points in Scrabble! | Y |
 
 
 ## Known Bugs
 
-| Bug | Resolved (Y/N) |  How was the issue resolved?  |
-| ------- | ----- | ------ | ------ | --------- |
-|  |  |  |
+_No known issues. Please contact me if you have any problems._
 
 
 ## Support and contact details
