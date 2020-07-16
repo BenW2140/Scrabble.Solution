@@ -10,7 +10,7 @@ namespace Scrabble.Models
     {
       Word = word;
     }
-    public bool GetScore(string word)
+    public bool IsWord(string word)
     {
       return true;
     }
@@ -57,7 +57,6 @@ namespace Scrabble.Models
       int score = 0;
       Word = Word.ToUpper();
       Word.Split();
-      // foreach (char letter in Word.Chars)
       for (int i = 0; i < Word.Length; i++)
       {
         score += scrabble[Word[i]];

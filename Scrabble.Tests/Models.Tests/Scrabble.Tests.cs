@@ -16,10 +16,10 @@ namespace Scrabble.Tests
     }
 
     [TestMethod]
-    public void GetScore_CheckIfWord_Bool()
+    public void IsWord_CheckIfWord_Bool()
     {
       Score newWord = new Score("word");
-      Assert.AreEqual(true, newWord.GetScore("word"));
+      Assert.AreEqual(true, newWord.IsWord("word"));
     }
     
     [TestMethod]
@@ -72,5 +72,3 @@ namespace Scrabble.Tests
     }
   }
 }
-
-// public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
