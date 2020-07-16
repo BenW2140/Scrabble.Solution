@@ -23,7 +23,7 @@ namespace Scrabble.Models
     public Dictionary<char, int> AssignValues()
     {
       Dictionary<char, int> scrabble = new Dictionary<char, int> 
-      { {'A', 1}, 
+      {{'A', 1}, 
       {'E', 1}, 
       {'I', 1}, 
       {'O', 1}, 
@@ -50,6 +50,19 @@ namespace Scrabble.Models
       {'Q', 10},
       {'Z', 10}};
       return scrabble;
+    }
+
+    public int ScoreWord(Dictionary<char, int> scrabble)
+    {
+      int score = 0;
+      Word = Word.ToUpper();
+      Word.Split();
+      // foreach (char letter in Word.Chars)
+      for (int i = 0; i < Word.Length; i++)
+      {
+        score += scrabble[Word[i]];
+      }
+      return score;
     }
   }
 }

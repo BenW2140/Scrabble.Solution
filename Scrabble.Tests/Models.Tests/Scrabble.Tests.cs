@@ -59,8 +59,16 @@ namespace Scrabble.Tests
     [TestMethod]
     public void WordLength_LengthOfWord_Int()
     {
-    Score newWord = new Score("word");
-    Assert.AreEqual(4, newWord.WordLength());
+      Score newWord = new Score("word");
+      Assert.AreEqual(4, newWord.WordLength());
+    }
+
+    [TestMethod]
+    public void ScoreWord_ReturnScoreOfWord_Int()
+    {
+      Score newWord = new Score("word");
+      Dictionary<char, int> scrabble = newWord.AssignValues();
+      Assert.AreEqual(8, newWord.ScoreWord(scrabble));
     }
   }
 }
